@@ -1,0 +1,16 @@
+/* font */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.english {
+    font-family: "EB Garamond", serif;
+}
+
+.achievement {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+}
+
+/* top画像位置決定 */
+

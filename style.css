@@ -12,5 +12,57 @@ body {
     font-weight: 700;
 }
 
+
 /* top画像位置決定 */
 
+.top1 {
+  position: fixed;
+  top: 30px;
+  left: 330px;
+  width: 560px;
+  clip-path: inset(100px 0 0 0)
+}
+
+.top2 {
+  position: fixed;
+  top: -140px;
+  left: 1000px;
+  width: 600px;
+}
+
+.top3 {
+  position: fixed;
+  top: 570px;
+  left: 1450px;
+  width: 300px;
+}
+
+
+/* タイトル文字 */
+
+.title-position {
+    position: fixed;
+    top: 370px;
+    left: 260px;
+    font-size: 170px;
+    color: rgb(64, 64, 64);
+    text-shadow: 4px 4px 6px rgba(0, 0, 50, 0.5);
+}
+
+.second-position {
+    position: fixed;
+    top: 560px;
+    left: 266px;
+    font-size: 170px;
+    color: rgb(217, 217, 217);
+    text-shadow: 4px 4px 6px rgba(0, 0, 10, 0.3);
+}
+
+.third-position {
+    position: fixed;
+    top: 560px;
+    left: 830px;
+    font-size: 170px;
+    color: rgb(64, 64, 64);
+    text-shadow: 4px 4px 6px rgba(0, 0, 50, 0.5);
+}

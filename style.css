@@ -78,40 +78,101 @@
 
 
 /* about meの位置決定 */
+
 #about{
-    padding:150px 0;
-    background:#f5f5f5;
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: white;
 }
 
-.about-card{
-    width:1200px;
-    margin:0 auto;
-    background:white;
-    border-radius:30px;
-    padding:80px 100px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+/* 背面の紺色 */
+
+.about-navy{
+    position:absolute;
+    top:300px;
+    right:150px;
+    width:1300px;
+    height:1150px;
+    background:#1d2948;
+
+    z-index:1;
+}
+
+/* 前面の薄灰色 */
+
+.about-gray{
+    position:absolute;
+    top:200px;
+    left:0;
+    width:1650px;
+    height:1150px;
+    background:rgba(239,239,239,0.9);
+
+    z-index:2;
+}
+
+/* コンテンツ */
+
+.about-content{
+    position:relative;
+    top:auto;
+    left:auto;
+    width:1100px;
+    margin-left:180px;
+    padding-top:120px;
+
+    z-index:3;
 }
 
 .about-title{
-    font-size:90px;
-    margin-top:0;
-    margin-bottom:80px;
+    font-size:28px;
     color:#404040;
+    margin-top:130px;
+    margin-left:200px;
+    margin-bottom:80px;
+    letter-spacing:3px;
 }
 
 .about-grid{
     display:grid;
-    grid-template-columns:200px 1fr;
-    row-gap:50px;
+    margin-left:450px;
+    grid-template-columns:180px 800px;
+    row-gap:35px;
 }
 
 .item-title{
     font-size:28px;
-    font-weight:bold;
-    color:#666;
+    color:#444;
 }
 
 .item-content{
     font-size:28px;
+    margin-top:-5px;
+    margin-left:100px;
+    color:#222;
+    line-height:1.7;
+}
+
+/* 卒業研究 */
+
+.research-box{
+    margin-top:80px;
+    margin-left:400px;
+    width:850px;
+    padding:40px;
+    background:white;
+    border-left:10px solid #1d2948;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.research-box h3{
+    margin:0 0 25px;
+    font-size:36px;
+    color:#1d2948;
+}
+
+.research-box p{
+    font-size:24px;
     line-height:1.8;
 }

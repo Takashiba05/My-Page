@@ -176,3 +176,255 @@
     font-size:24px;
     line-height:1.8;
 }
+
+/* ====================
+   MILESTONES
+==================== */
+
+#milestones{
+    position:relative;
+    margin-top:1000px;
+    width:2000px;
+    height:7000px;
+
+    overflow:hidden;
+}
+
+/* 背景 */
+
+.milestone-bg{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:#1d2948;
+
+    z-index:1;
+}
+
+/* 背景写真 */
+
+.achievement-photo{
+    position:absolute;
+
+    left:320px;
+    top:0;
+
+    width:1700px;
+
+    object-fit:cover;
+
+    clip-path: inset(160px 300px 500px 0);
+
+    opacity:0.18;
+
+    filter:
+        grayscale(20%)
+        brightness(0.8);
+}
+
+/* タイトル */
+
+.milestone-title{
+    position:absolute;
+
+    top:60px;
+    left:40px;
+
+    font-size:28px;
+
+    color:white;
+
+    z-index:10;
+}
+
+/* 中央タイムライン */
+
+.timeline{
+    position:absolute;
+
+    left:1020px;
+    top:180px;
+
+    width:2px;
+    height:7500px;
+
+    background:white;
+
+    z-index:5;
+}
+
+/* ====================
+   共通
+==================== */
+
+.milestone-item{
+    position:absolute;
+
+    width:900px;
+
+    color:white;
+
+    z-index:10;
+}
+
+.milestone-item h3{
+    font-family:"Noto Serif JP", serif;
+    font-size:48px;
+    color:#ffee3a;
+
+    margin: -20px 40px 40px 0;
+
+    text-shadow:
+        0 0 15px rgba(255,238,58,.5);
+}
+
+
+
+/* 日付 */
+
+.date{
+    position:absolute;
+
+    top:23px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    color:rgb(152, 152, 152);
+}
+
+/* ====================
+   左側
+==================== */
+
+.left{
+    left: 42px;
+}
+
+
+
+.left::before{
+    content:"";
+
+    position:absolute;
+
+    top:50px;
+    right:-80px;
+
+    width:750px;
+    height:2px;
+
+    background:white;
+}
+
+.left::after{
+    content:"";
+
+    position:absolute;
+
+    top:43px;
+    right:-87px;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:white;
+}
+
+.left p{
+    margin-left:230px;
+}
+
+.left .date{
+    right:-58px;
+}
+
+/* ====================
+   右側
+==================== */
+
+.right{
+    left:1040px;
+}
+
+
+
+.right::before{
+    content:"";
+
+    position:absolute;
+
+    top:50px;
+    left:-13px;
+
+    width:750px;
+    height:2px;
+
+    background:white;
+}
+
+.right::after{
+    content:"";
+
+    position:absolute;
+
+    top:43px;
+    left:-25px;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:white;
+}
+
+
+.right p{
+    margin-left:160px;
+}
+
+.right .date{
+    left:0;
+}
+
+
+/* タイトル */
+
+.milestone-item h3{
+    position: relative;
+
+    left: var(--title-x, 0px);
+
+    font-family:"Noto Serif JP", serif;
+    font-size:48px;
+    color:#ffee3a;
+
+    margin:-20px 40px 40px 0;
+
+    text-shadow:
+        0 0 15px rgba(255,238,58,.5);
+}
+
+/* 本文 */
+
+.milestone-item p{
+    position:relative;
+    font-family: "Noto Sans JP", sans-serif;
+    left: var(--text-x, 0px);
+
+    margin-top:40px;
+
+    font-family:"Noto Sans JP", sans-serif;
+    font-size:24px;
+    font-weight:200;
+
+    line-height:1.6;
+
+    text-shadow:
+        0 0 8px rgba(0,0,0,.7);
+}

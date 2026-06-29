@@ -804,3 +804,10 @@
     font-size: 60px;
     transition: 0.3s;
 }
+
+
+
+#page-scale{
+    width: 2009px;
+    transform-origin: top left;
+}

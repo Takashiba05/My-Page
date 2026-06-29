@@ -1,25 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
 
-    const photo = document.querySelector(".achievement-photo");
-    const section = document.querySelector("#milestones");
+function scalePage() {
 
-    const observer = new IntersectionObserver((entries) => {
+    console.log(window.innerWidth);
 
-        entries.forEach(entry => {
+    const page = document.getElementById("page-scale");
 
-            console.log(entry.isIntersecting);
+    const designWidth = 2009;
 
-            if (entry.isIntersecting) {
-                console.log("発火");
+    const scale = Math.min(
+        window.innerWidth / designWidth,
+        1
 
-                photo.classList.add("show");
-                observer.disconnect();
-            }
+    );
 
-        });
+    console.log(
+        "幅:", window.innerWidth,
+        "scale:", scale
+    );
 
-    });
+    page.style.transform = `scale(${scale})`;
+}
 
-    observer.observe(section);
-
-});
+window.addEventListener("load", scalePage);
+window.addEventListener("resize", scalePage);
